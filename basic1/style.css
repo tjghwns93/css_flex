@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.container {
+    border: 2px solid #000;
+    background-color: green;
+    display: flex;
+    /* display: inline-flex; */
+    flex-direction: row; /* 기본값 */
+
+    /* 줄넘기처리 */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+    /* 메인축방향과, 줄넘김 축약형 */
+    flex-flow: row wrap;
+    /* flex-flow: row nowrap; */
+
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+    width: 40%;
+}

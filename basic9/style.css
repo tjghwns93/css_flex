@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 2px solid #000;
+    background-color: green;
+    display: flex;
+
+}
+
+.container .item {
+    border: 2px solid #000;
+    background-color: yellow;
+    /* flex-basis: auto;인데 압축하면 0%적용 */
+    flex: 1;
+    /* flex: flex-grow flex-shrink flex-basis; */
+    /* flex: 0 1 auto; */
+    flex: 1 1 300px;
+
+
+}
+
+.container .item:first-child{
+    flex: 1 0 auto;
+    width: 200px
+}
